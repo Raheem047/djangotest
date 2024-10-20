@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'your_default_secret_key')  # Use environment variable for secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # Use environment variable for debug mode
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'  # Use environment variable for debug mode
 
 # Define allowed hosts
 ALLOWED_HOSTS = ['djangotest-nj24.onrender.com', 'localhost', '127.0.0.1']
