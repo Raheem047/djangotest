@@ -30,7 +30,7 @@ CSRF_TRUSTED_ORIGINS = ['https://djangotest-nj24.onrender.com']
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/admin')  # Ensure this is correct
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Ensure this is correct
 
 
 # In production, you may need to use this setting
