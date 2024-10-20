@@ -25,8 +25,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your_default_secret_key')  # Use envi
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # Use environment variable for debug mode
 
 # Define allowed hosts
-ALLOWED_HOSTS = ['djangotest-production-a9ac.up.railway.app', 'localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://djangotest-production-a9ac.up.railway.app']
+ALLOWED_HOSTS = ['djangotest-nj24.onrender.com', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://djangotest-nj24.onrender.com']
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
