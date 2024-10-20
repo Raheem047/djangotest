@@ -23,12 +23,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your_default_secret_key')  # Use envi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # Use environment variable for debug mode
 
+# Define allowed hosts
 ALLOWED_HOSTS = ['djangotest-production-a9ac.up.railway.app', 'localhost', '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ['https://djangotest-production-a9ac.up.railway.app']
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Ensure this is correct
 
 # In production, you may need to use this setting
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [],  # You can add template directories here if needed
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
