@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Links Page</title>
+</head>
+<body>
+    <h1>Available Links</h1>
+    <ul>
+        {% for link in links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% empty %}
+            <li>No links available</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
